@@ -7,11 +7,21 @@
     <title>Bootstrap template</title>
     <link rel="stylesheet" href="vendor/css/all.min.css">
     <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div class="loading">
+    <span class="loader"></span>
+  </div>
+
+  <div class="top">
+    <button class="border-0 bg-transparent" >
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </div>
    <!-- Start Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg bg-transparent ">
+    <nav class="navbar fixed-top navbar-expand-lg bg-transparent " id="navbar">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="assets/images/logo.png" alt="logo image">
@@ -25,16 +35,16 @@
                 <a class="nav-link  text-capitalize active all" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link text-capitalize" href="#">Service</a>
+                <a class="nav-link text-capitalize" href="#services">Service</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-capitalize" href="#">Portfolio</a>
+                <a class="nav-link text-capitalize" href="#portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-capitalize" href="#">Resume</a>
+                <a class="nav-link text-capitalize" href="#resume">Resume</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-capitalize" href="#">Contact</a>
+                <a class="nav-link text-capitalize" href="#contact">Contact</a>
               </li>
               <a href="#" class="btn buttn text-decoration-none border rounded-pill px-2 py-2 text-white">
                 <span class="text-capitalize">Hire Me</span>
@@ -77,27 +87,27 @@
           <div class="col-lg-6 numbers">
             <div class=" p-4 text-white text-center">
             <div class="row">
-              <div class="col-lg-6  py-5 border-bottom border-end">
+              <div class="count col-lg-6  py-5 border-bottom border-end">
                 <div class="number">
                   <span>482</span>
                   <p>Projects Completed</p>
                 </div>
               </div>
-              <div class="col-lg-6 py-5 border-bottom">
+              <div class="count col-lg-6 py-5 border-bottom">
                 <div class="number">
                   <span>934
                     </span>
                 <p>Creative Designs</p>
                  </div>
                  </div>
-              <div class="col-lg-6 py-5 border-end">
+              <div class="count col-lg-6 py-5 border-end">
                 <div class="number">
                   <span>366</span>
                 <p>Happy Clients
                 </p>
                 </div>
               </div>
-              <div class="col-lg-6 py-5">
+              <div class="count col-lg-6 py-5">
                 <div class="number">
                   <span>7322</span>
                 <p>Happy Clients</p>
@@ -512,7 +522,7 @@
   <div class="container">
     <div class="d-flex justify-content-center">
       <div class="title position-relative my-2">
-        <span class="text-uppercase border-bottom  pb-2 text-uppercase">portfolio</span>
+        <span class="text-uppercase border-bottom  pb-2 text-uppercase">resume</span>
         <h2 class="mt-2 fw-bold text-capitalize">my featured work</h2>
         </div>
       </div>
@@ -917,5 +927,6 @@
 </footer>
 <!-- End footer -->
   <script src="vendor/js/bootstrap.min.js"></script>
+  <script src="vendor/js/main.js"></script>
 </body>
 </html>
